@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="PatMax" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">47500</Value>
+    </Setting>
+    <Setting Name="ConsoleMax" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">47500</Value>
+    </Setting>
+    <Setting Name="ComPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="Website" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://passappal.com</Value>
+    </Setting>
+    <Setting Name="OutputMethod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">E6000</Value>
+    </Setting>
+    <Setting Name="CMtoInch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0.393700787  	 	</Value>
+    </Setting>
+    <Setting Name="JournalSixConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=|DataDirectory|\JournalSix.sdf&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=|DataDirectory|\JournalSix.sdf</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
