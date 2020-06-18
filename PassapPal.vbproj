@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB9F0D79-8B13-4A93-9529-A5BB75632468}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Journal6.My.MyApplication</StartupObject>
+    <RootNamespace>Journal6</RootNamespace>
+    <AssemblyName>Journal6V8</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>JournalSix.pfx</AssemblyOriginatorKeyFile>
+    <ManifestCertificateThumbprint>EF90EB98D0DFE670E414E6B985B2D050AAF58F6F</ManifestCertificateThumbprint>
+    <ManifestKeyFile>alkjerj.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>Journal6.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <PublishUrl>c:\Journal6\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>30</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://PassapPal.com</SupportUrl>
+    <ProductName>Journal 6</ProductName>
+    <PublisherName>Jennifer L Schmidt</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>Install.html</WebPage>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Journal6V8.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Journal6V8.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Journal6V8.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Journal6V8.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.50, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BitmapBytesARGB32.vb" />
+    <Compile Include="Card.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorScheme.Designer.vb">
+      <DependentUpon>ColorScheme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColorScheme.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cropper.Designer.vb">
+      <DependentUpon>Cropper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cropper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRTDiagram.Designer.vb">
+      <DependentUpon>CRTDiagram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CRTDiagram.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DBPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Journal.Designer.vb">
+      <DependentUpon>Journal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Journal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JournalSixDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JournalSixDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JournalSixDataSet.vb">
+      <DependentUpon>JournalSixDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="NeedleDiagram.Designer.vb">
+      <DependentUpon>NeedleDiagram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NeedleDiagram.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PassapMsg.Designer.vb">
+      <DependentUpon>PassapMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassapMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassapPalDataSet.Designer.vb">
+      <DependentUpon>PassapPalDataSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassapPalDataSet.vb">
+      <DependentUpon>PassapPalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PicPanel.vb">
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SketchBook.Designer.vb">
+      <DependentUpon>SketchBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SketchBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SketchBox.Designer.vb">
+      <DependentUpon>SketchBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SketchBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StitchPatternBox.Designer.vb">
+      <DependentUpon>StitchPatternBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StitchPatternBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YarnFeeders.Designer.vb">
+      <DependentUpon>YarnFeeders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnFeeders.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Journal.resx">
+      <DependentUpon>Journal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassapMsg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassapMsg.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Journal6.ico" />
+    <EmbeddedResource Include="ColorScheme.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorScheme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cropper.resx">
+      <DependentUpon>Cropper.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTDiagram.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CRTDiagram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NeedleDiagram.resx">
+      <DependentUpon>NeedleDiagram.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PAL1.PAL" />
+    <EmbeddedResource Include="SketchBook.resx">
+      <DependentUpon>SketchBook.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SketchBox.resx">
+      <DependentUpon>SketchBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StitchPatternBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StitchPatternBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnFeeders.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>YarnFeeders.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="alkjerj.pfx" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <Content Include="JournalSix.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JournalSixUserManual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\SketchCoverOpaque.png" />
+    <Content Include="sqlceca35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcecompact35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceer35EN.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceme35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceoledb35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlceqp35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sqlcese35.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="System.Data.SqlServerCe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="System.Data.SqlServerCe.Entity.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="License Agreement.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="PassapPalDataSet.xsc">
+      <DependentUpon>PassapPalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PassapPalDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PassapPalDataSet.xss">
+      <DependentUpon>PassapPalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\paintChooser.ico" />
+    <None Include="Resources\DimCircle.bmp" />
+    <None Include="Resources\GuideLines.bmp" />
+    <None Include="Resources\Journal6V4.ico" />
+    <None Include="Resources\lasso.bmp" />
+    <None Include="Resources\selectPaint.bmp" />
+    <None Include="Resources\SketchCover.png" />
+    <None Include="Resources\SketchCover1.png" />
+    <None Include="Resources\sprial.bmp" />
+    <None Include="Resources\DimUndo.bmp" />
+    <None Include="Resources\Undo.bmp" />
+    <None Include="Resources\Redo.bmp" />
+    <None Include="Resources\DimSquare.bmp" />
+    <None Include="Resources\DimSolidText.bmp" />
+    <None Include="Resources\DimRotateRight.bmp" />
+    <None Include="Resources\DimRotateLeft.bmp" />
+    <None Include="Resources\DimRedo.bmp" />
+    <None Include="Resources\DimMirror.bmp" />
+    <None Include="Resources\DimLasso.bmp" />
+    <None Include="Resources\DimHorizontalLine.bmp" />
+    <None Include="Resources\DimHalfdrop.bmp" />
+    <None Include="Resources\DimGuideLines.bmp" />
+    <None Include="Resources\DimGridRepeat.bmp" />
+    <None Include="Resources\DimFlip.bmp" />
+    <None Include="Resources\DimFilledText.bmp" />
+    <None Include="Resources\DimFilledSquare.bmp" />
+    <None Include="Resources\DimFilledCircle.bmp" />
+    <None Include="Resources\DimFill.bmp" />
+    <None Include="Resources\DimDropper.bmp" />
+    <None Include="Resources\DimDiagonalRepeat.bmp" />
+    <None Include="Resources\DimDiagonalLine.bmp" />
+    <None Include="Resources\DimBrush.bmp" />
+    <None Include="Resources\DimBrickRepeat.bmp" />
+    <None Include="Resources\DimVerticalLine.bmp" />
+    <None Include="Resources\Dropper1.bmp" />
+    <None Include="Resources\VerticalLine.bmp" />
+    <None Include="Resources\square.bmp" />
+    <None Include="Resources\SolidText.bmp" />
+    <None Include="Resources\RotateRight.bmp" />
+    <None Include="Resources\RotateLeft.bmp" />
+    <None Include="Resources\Mirror.bmp" />
+    <None Include="Resources\HorizontalLine.bmp" />
+    <None Include="Resources\halfdrop.bmp" />
+    <None Include="Resources\Flip.bmp" />
+    <None Include="Resources\FilledText.bmp" />
+    <None Include="Resources\FilledSquare.bmp" />
+    <None Include="Resources\FilledCircle.bmp" />
+    <None Include="Resources\Fill.bmp" />
+    <None Include="Resources\Dropper.bmp" />
+    <None Include="Resources\diagonalRepeat.bmp" />
+    <None Include="Resources\DiagonalLine.bmp" />
+    <None Include="Resources\circle.bmp" />
+    <None Include="Resources\Brush.bmp" />
+    <None Include="Resources\BrickRepeat.bmp" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="JournalSix.pfx" />
+    <None Include="JournalSixDataSet.xsc">
+      <DependentUpon>JournalSixDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JournalSixDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JournalSixDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JournalSixDataSet.xss">
+      <DependentUpon>JournalSixDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PassapPal_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
